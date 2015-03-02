@@ -1,6 +1,9 @@
 module.exports = {
   normalizeEntityName: function() {},
   afterInstall: function() {
-    return this.addBowerPackageToProject('momentjs');
+  	var self = this;
+    return this.addBowerPackageToProject('moment').then(function(){
+    	return self.addBowerPackageToProject('lodash');
+    });
   }
 };

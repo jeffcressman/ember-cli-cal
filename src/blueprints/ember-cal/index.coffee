@@ -2,4 +2,4 @@ module.exports =
     normalizeEntityName: ->
 
     afterInstall: ->
-        @addBowerPackageToProject 'momentjs'
+        @addBowerPackageToProject 'moment'
